@@ -1,5 +1,5 @@
 import { Container, Wrap } from "./styles";
-import { Header, Gap, Footer, MetaArt } from "@/components";
+import { Header, Gap, Footer } from "@/components";
 import { Route, Switch, Redirect, useLocation } from "react-router-dom";
 import { MarketApi, SalesApi } from "@/apis";
 import Profile from "./Profile";
@@ -19,6 +19,7 @@ import Live from "./Live";
 import Manual from "./Manual";
 import FAQ from "./FAQ";
 import CreateItem from './Create/CreateItem';
+import {MetaArt} from './MetaArt'
 import LoadModelCache from '@/utils/MetaverseModelFun'
 declare global {
     interface Window {
@@ -63,7 +64,7 @@ export default () => {
                     className="container"
                 >
                     <Switch>
-                        <Route exact path="/" render={() => <Home/>}/>
+                        <Route exact path="/" render={() => <MetaArt/>}/>
                         <Route
                             exact
                             path="/profile/:id"
