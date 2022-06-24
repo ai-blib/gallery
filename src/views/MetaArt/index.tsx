@@ -1,6 +1,6 @@
 import {MetaArtStyles as Styled} from './styles'
 import React, {useCallback, useEffect, useState} from "react";
-import Univarse from "./univarse";
+// import Univarse from "./univarse";
 import {ButtonTabs, Gap, MainButton} from "@/components";
 import storage from "@/utils/storage";
 import {CollectionExt} from "@/did/model/market";
@@ -11,8 +11,8 @@ import {MarketApi} from "@/apis";
 import {EnterWorld, Buy} from './components'
 import {IsPC} from '@/utils/formate'
 import Game from './Gallery/game'
-import GalleryPerson from './GalleryPerson'
-import GalleryUnivarse from './Gallery'
+// import GalleryPerson from './GalleryPerson'
+// import GalleryUnivarse from './Gallery'
 
 let instance: any = null;
 let isMobile = !IsPC();

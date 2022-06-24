@@ -15,6 +15,7 @@ export default class LoadModelCache {
     }
 
     static async LoaderRemoteModelObj() {
+        return
         if (this.ModelUrl.house) {
             return this.ModelUrl
         }
